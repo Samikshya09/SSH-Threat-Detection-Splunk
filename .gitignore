@@ -1,0 +1,8 @@
+.DS_Store
+README.md.save
+*.swp
+*.swo
+.env
+.env.*
+__pycache__/
+*.pyc

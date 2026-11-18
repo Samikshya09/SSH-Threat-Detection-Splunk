@@ -1,0 +1,6 @@
+index=ssh_testing ("Failed password" OR "Accepted password")
+| rex field=_raw "from (?<src_ip>\d+\.\d+\.\d+\.\d+)"
+| sort 0 _time
+| streamstats time_window=60s count(eval(match(_raw,"Failed password"))) AS recent_failures BY src_ip
+| where match(_raw,"Accepted password") AND recent_failures>=5
+| table _time src_ip recent_failures host

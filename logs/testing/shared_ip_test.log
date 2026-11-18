@@ -1,0 +1,6 @@
+Nov 17 16:00:01 server01 sshd[3001]: Failed password for alice from 192.0.2.100 port 52001 ssh2
+Nov 17 16:00:04 server01 sshd[3002]: Failed password for bob from 192.0.2.100 port 52002 ssh2
+Nov 17 16:00:07 server01 sshd[3003]: Failed password for charlie from 192.0.2.100 port 52003 ssh2
+Nov 17 16:00:10 server01 sshd[3004]: Failed password for david from 192.0.2.100 port 52004 ssh2
+Nov 17 16:00:13 server01 sshd[3005]: Failed password for emma from 192.0.2.100 port 52005 ssh2
+Nov 17 16:00:16 server01 sshd[3006]: Accepted password for frank from 192.0.2.100 port 52006 ssh2
